@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6 Meses de Amor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style/style.css" />
+  <style>
+    .btn-custom {
+      background-color: #ffb6c1;
+      color: #fff;
+      font-weight: 500;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #ff99aa;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .text-box {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Primeira linha: Imagem, título, texto e botões -->
+    <div class="row align-items-start flex-column flex-md-row">
+      <!-- Imagem -->
+      <div class="col-md-5 col-12 text-center img-fixed mb-4 mb-md-0">
+        <img src="img/no ombro.jpeg" class="img-fluid rounded shadow" alt="Foto do casal">
+      </div>
+
+      <!-- Texto e botões -->
+      <div class="col-md-7 col-12">
+        <h1 class="text-danger text-center mb-4">Feliz seis meses, meu amor</h1>
+        <p class="fs-5 mb-4 text-center text-md-start">
+          Essa foi a nossa primeira foto juntos, o começo de tudo. A primeira vez que você se sentiu segura comigo, minha princesa. Hoje, já se passaram 6 meses... E você preparou algo pra mim, então aqui está o meu presente pra você. Estou ansioso para saber o que você fez para mim.
+        </p>
+
+        <!-- Botões -->
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mb-3">
+          <button class="btn btn-custom" onclick="mostrarTexto('texto1')">Primeiro texto</button>
+          <button class="btn btn-custom" onclick="mostrarTexto('texto2')">Segundo texto</button>
+          <button class="btn btn-custom" onclick="mostrarTexto('texto3')">Terceiro texto</button>
+          <button class="btn btn-custom" onclick="mostrarTexto('texto4')">Primeiro presente</button>
+          <button class="btn btn-custom" onclick="mostrarTexto('texto5')">Segundo presente</button>
+          <button class="btn btn-custom" onclick="mostrarTexto('texto6')">Terceiro presente</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda linha: Textos -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <div id="texto1" class="text-box fs-5 mb-4">
+          <p>
+            Quem diria que completaríamos 6 meses de namoro... Nessa mesma data no ano passado, eu nem sonhava em namorar, e tu estava pedindo a Deus um homem. E Ele te deu a mim. Tu me ajudou muito na minha caminhada de conversão, me reconectando com Deus. Isso foi a coisa mais importante que me aconteceu ano passado. Eu te amo, minha princesa.
+          </p>
+        </div>
+
+        <div id="texto2" class="text-box fs-5 mb-4">
+          <p>
+            Quero lembrar dos nossos momentos… No começo, nos testamos bastante. Mas a primeira qualidade que me conquistou foi quando tu disse pra eu não gastar dinheiro contigo no primeiro encontro. Isso me fez te admirar demais. Tu mostrou meiguice, fidelidade, responsabilidade e preservação… tudo o que eu sempre busquei em uma mulher.
+          </p>
+        </div>
+
+        <div id="texto3" class="text-box fs-5 mb-4">
+          <p>
+            Amor, não é de hoje que você relata os problemas emocionais que você tem sofrido e sempre sofreu sozinha, como por exemplo uma vez que tua mãe descontou raiva em tu e tu teve uma crise, na qual o Lúcio me levou pra sua casa e fez tu ir pro terraço me encontrar, que fiquei junto contigo até tu ficar bem, sempre que necessário eu farei isso, eu te amo, minha princesa, pode contar comigo pra desabafar sempre que precisar. Acho que essa é uma das formas de eu demonstrar que te amo, eu te amo, minha princesa.
+          </p>
+        </div>
+
+        <div id="texto4" class="text-box fs-5 mb-4">
+          <p>
+            O primeiro presente eu vou te entregar.
+          </p>
+        </div>
+
+        <div id="texto5" class="text-box fs-5 mb-4">
+          <p>
+            O segundo presente está localizado na sala.
+          </p>
+        </div>
+
+        <div id="texto6" class="text-box fs-5 mb-4">
+          <p>
+            O terceiro presente está localizado no meu quarto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarTexto(id) {
+      const textos = document.querySelectorAll(".text-box");
+      textos.forEach(texto => texto.style.display = "none");
+      document.getElementById(id).style.display = "block";
+    }
+  </script>
+</body>
+</html>

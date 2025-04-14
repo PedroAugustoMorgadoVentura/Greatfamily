@@ -1,0 +1,57 @@
+body {
+    background-color: #fff0f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .btn-custom {
+    background-color: #ff3366; /* Cor mais forte de fundo */
+    border: none;
+    color: white;
+    padding: 12px 30px; /* Aumentei o padding para dar mais destaque ao botão */
+    font-size: 1.2rem; /* Aumentei o tamanho da fonte para ficar mais legível */
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(255, 51, 102, 0.4); /* Sombras para destacar mais o botão */
+    transition: 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #ff1a47; /* Cor de hover mais intensa */
+    box-shadow: 0 6px 15px rgba(255, 26, 71, 0.6); /* Sombras no hover para dar destaque */
+  }
+  
+  .text-box {
+    display: none;
+    animation: fadeIn 0.7s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Sticky apenas em telas médias ou maiores */
+  @media (min-width: 768px) {
+    .img-fixed {
+      position: sticky;
+      top: 100px;
+    }
+  }
+  
+  /* Ajustes para telas menores */
+  @media (max-width: 767px) {
+    .btn-custom {
+      width: 100%;
+      font-size: 1.1rem; /* Um pouco maior para telas menores */
+    }
+  
+    .text-box {
+      text-align: center;
+    }
+  }
+  
